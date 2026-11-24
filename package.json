@@ -1,0 +1,12 @@
+{
+  "name": "shree-hari-kripa-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npm ci --prefix site && npm run build --prefix site",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.167.0"
+  }
+}

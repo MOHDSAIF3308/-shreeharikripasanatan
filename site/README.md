@@ -32,6 +32,25 @@ npm start
 
 The production build creates static files in `out/`, ready for Cloudflare Pages.
 
+## Deploy to Cloudflare Workers
+
+This repository also includes a Wrangler configuration for Workers Static Assets.
+At the repository root, use:
+
+```bash
+npm install
+npm run deploy
+```
+
+In the Cloudflare Workers build settings, set the **Deploy command** to:
+
+```text
+npm run deploy
+```
+
+The deployment script installs the site dependencies, creates the static export in
+`site/out`, and uploads it with Wrangler.
+
 ## Deploy to Cloudflare Pages
 
 ### Automatic deployment (recommended)

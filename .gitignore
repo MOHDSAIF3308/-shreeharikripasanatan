@@ -1,5 +1,7 @@
 site/node_modules
 site/.next
 site/out
+node_modules
 .DS_Store
 *.log
+node_modules
